@@ -680,6 +680,23 @@ const injectHomeMediaStyles = () => {
           }
         }
         @media (max-width: 600px) {
+          section[style*="hero"] {
+            padding: 4rem 0 !important;
+          }
+          h1[style*="heroTitle"] {
+            font-size: 1.8rem !important;
+            line-height: 1.3 !important;
+          }
+          p[style*="heroSubtitle"] {
+            font-size: 1rem !important;
+            margin-bottom: 1.5rem !important;
+          }
+          section[style*="bioBanner"] {
+            padding: 3rem 0 !important;
+          }
+          h2[style*="bioTitle"] {
+            font-size: 1.8rem !important;
+          }
           div[style*="eventRowCard"] {
             flex-direction: column !important;
             gap: 1rem !important;
@@ -693,6 +710,9 @@ const injectHomeMediaStyles = () => {
           }
           span[style*="eventDateDay"] {
             font-size: 1.2rem !important;
+          }
+          .leader-card {
+            max-width: 100% !important;
           }
         }
       `;

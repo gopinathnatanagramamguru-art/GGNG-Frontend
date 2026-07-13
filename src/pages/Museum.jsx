@@ -375,6 +375,17 @@ const injectMuseumMediaStyles = () => {
             text-align: center !important;
           }
         }
+        @media (max-width: 600px) {
+          section[style*="banner"] {
+            padding: 2.5rem 0 !important;
+          }
+          h1[style*="bannerTitle"] {
+            font-size: 1.8rem !important;
+          }
+          div[style*="categoryFilters"] {
+            gap: 0.5rem !important;
+          }
+        }
       `;
       document.head.appendChild(styleSheet);
     }

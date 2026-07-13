@@ -192,6 +192,24 @@ const injectMediaStyles = () => {
             display: block !important;
           }
         }
+        @media (max-width: 600px) {
+          .navbar-title {
+            font-size: 0.9rem !important;
+          }
+          .govt-tag {
+            font-size: 0.65rem !important;
+            letter-spacing: 0.5px !important;
+          }
+          /* Hide the first logo to save space on mobile */
+          a[style*="brandContainer"] div:first-child {
+            display: none !important;
+          }
+          /* Make logo smaller on mobile */
+          .navbar-logo {
+            width: 36px !important;
+            height: 36px !important;
+          }
+        }
       `;
       document.head.appendChild(styleSheet);
     }

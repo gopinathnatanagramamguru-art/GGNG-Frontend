@@ -351,6 +351,15 @@ const injectAboutMediaStyles = () => {
           }
         }
         @media (max-width: 600px) {
+          section[style*="headerSection"] {
+            padding: 2.5rem 0 !important;
+          }
+          h1[style*="headerTitle"] {
+            font-size: 1.8rem !important;
+          }
+          h2[style*="subTitle"] {
+            font-size: 1.7rem !important;
+          }
           div[style*="pointsGrid"] {
             grid-template-columns: 1fr !important;
             gap: 1.25rem !important;
