@@ -23,10 +23,10 @@ const About = () => {
   return (
     <div style={styles.page} className="animate-fade-up">
       {/* Header Section */}
-      <section style={styles.headerSection}>
+      <section className="header-section" style={styles.headerSection}>
         <div className="container" style={styles.headerContainer}>
           <span style={styles.headerGov}>Department of Culture, Govt. of Kerala</span>
-          <h1 style={styles.headerTitle}>About the Institution & Legacy</h1>
+          <h1 className="header-title" style={styles.headerTitle}>About the Institution & Legacy</h1>
           <p style={styles.headerSubtitle}>
             Preserving classical heritage, fostering creative arts training, and promoting Kerala Natanam dance form.
           </p>
@@ -35,7 +35,7 @@ const About = () => {
 
       {/* Guru Gopinath Biography Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-main)' }}>
-        <div className="container" style={styles.gridSection}>
+        <div className="container grid-section" style={styles.gridSection}>
           <div style={styles.imgContainer}>
             <img
               src="/guru.jpg"
@@ -50,7 +50,7 @@ const About = () => {
 
           <div style={styles.textContent}>
             <span style={styles.sectionLabel}>The Visionary Founder</span>
-            <h2 style={styles.subTitle}>Guru Gopinath (1908 - 1987)</h2>
+            <h2 className="subtitle-text" style={styles.subTitle}>Guru Gopinath (1908 - 1987)</h2>
             <p style={styles.paragraph}>
               Born in Kuttanad, Alappuzha, Guru Gopinath was a legendary performer, choreographer, and Guru. He began training in Kathakali at a young age under eminent masters. With his refined technique, he envisioned an accessible form of classical dance that combined the dramatic qualities of Kathakali with modern performance sensibilities.
             </p>
@@ -66,15 +66,15 @@ const About = () => {
 
       {/* Kerala Natanam Dance Grammar Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-alt)' }}>
-        <div className="container" style={styles.gridSectionInverse}>
+        <div className="container grid-section-inverse" style={styles.gridSectionInverse}>
           <div style={styles.textContent}>
             <span style={styles.sectionLabel}>A Unique Classical Form</span>
-            <h2 style={styles.subTitle}>Kerala Natanam</h2>
+            <h2 className="subtitle-text" style={styles.subTitle}>Kerala Natanam</h2>
             <p style={styles.paragraph}>
               <b>Kerala Natanam</b> is a stylized, classical dance form created by Guru Gopinath. It was designed to bridge the gap between traditional orthodox dance forms and the general public, making mudras and stories easier to interpret.
             </p>
 
-            <div style={styles.pointsGrid}>
+            <div className="points-grid" style={styles.pointsGrid}>
               <div style={styles.pointCard}>
                 <Award size={20} color="var(--primary-color)" />
                 <div>
@@ -109,7 +109,7 @@ const About = () => {
             </div>
           </div>
 
-          <div style={styles.imgContainer}>
+          <div className="img-container" style={styles.imgContainer}>
             <img
               src="/kerala_natanam_about.png"
               alt="Kerala Natanam Performance Postures"
@@ -124,7 +124,7 @@ const About = () => {
         <div className="container">
           <div className="text-center" style={{ marginBottom: '3rem' }}>
             <span style={styles.sectionLabel}></span>
-            <h2 style={styles.subTitle}>Our Vision & Mission</h2>
+            <h2 className="subtitle-text" style={styles.subTitle}>Our Vision & Mission</h2>
             <p className="section-subtitle">
               Guru Gopinath Natanagramam is dedicated to the preservation, promotion, and enrichment of Indian dance and culture through these core missions.
             </p>
@@ -146,7 +146,7 @@ const About = () => {
         <div className="container" style={{ maxWidth: '850px' }}>
           <div className="text-center">
             <span style={styles.sectionLabel}>Our Roots</span>
-            <h2 style={styles.subTitle}>Our Legacy</h2>
+            <h2 className="subtitle-text" style={styles.subTitle}>Our Legacy</h2>
             <p style={styles.paragraphCenter}>
               Established in <b>1994–1995</b> by the Department of Culture, Government of Kerala, Guru Gopinath Natanagramam was envisioned as a comprehensive cultural village. Located in the serene outskirts of Vattiyoorkavu in Thiruvananthapuram, the campus provides a peaceful environment conducive to intensive training, creative research, and cultural tourism.
             </p>
@@ -342,25 +342,25 @@ const injectAboutMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
-          div[style*="gridSection"], div[style*="gridSectionInverse"] {
+          .grid-section, .grid-section-inverse {
             grid-template-columns: 1fr !important;
             gap: 2.5rem !important;
           }
-          div[style*="gridSectionInverse"] div[style*="imgContainer"] {
+          .grid-section-inverse .img-container {
             order: -1 !important;
           }
         }
         @media (max-width: 600px) {
-          section[style*="headerSection"] {
+          .header-section {
             padding: 2.5rem 0 !important;
           }
-          h1[style*="headerTitle"] {
+          .header-title {
             font-size: 1.8rem !important;
           }
-          h2[style*="subTitle"] {
+          .subtitle-text {
             font-size: 1.7rem !important;
           }
-          div[style*="pointsGrid"] {
+          .points-grid {
             grid-template-columns: 1fr !important;
             gap: 1.25rem !important;
           }

@@ -51,10 +51,10 @@ const Museum = () => {
   return (
     <div style={styles.page} className="animate-fade-up">
       {/* Header Banner */}
-      <section style={styles.banner}>
+      <section className="banner-section" style={styles.banner}>
         <div className="container" style={styles.bannerContainer}>
           <span style={styles.govtLabel}>India's First Dance Museum</span>
-          <h1 style={styles.bannerTitle}>The Dance Museum Gallery</h1>
+          <h1 className="banner-title" style={styles.bannerTitle}>The Dance Museum Gallery</h1>
           <p style={styles.bannerSubtitle}>
             A three-storey treasure trove showcasing the history of classical dances, traditional instruments, murals, and archives of Guru Gopinath's life.
           </p>
@@ -73,7 +73,7 @@ const Museum = () => {
             </div>
             
             {/* Floor tabs */}
-            <div style={styles.floorTabs}>
+            <div className="floor-tabs" style={styles.floorTabs}>
               {[
                 { label: 'All Galleries', val: 'all' },
                 { label: 'Floor 1: Costumes & Murals', val: '1' },
@@ -83,6 +83,7 @@ const Museum = () => {
                 <button
                   key={tab.val}
                   onClick={() => setSelectedFloor(tab.val)}
+                  className="floor-tab-btn"
                   style={{
                     ...styles.floorTabBtn,
                     backgroundColor: selectedFloor === tab.val ? 'var(--primary-color)' : 'transparent',
@@ -96,7 +97,7 @@ const Museum = () => {
             </div>
 
             {/* Category selection */}
-            <div style={styles.categoryFilters}>
+            <div className="category-filters" style={styles.categoryFilters}>
               {categories.map((cat) => (
                 <button
                   key={cat}
@@ -151,7 +152,7 @@ const Museum = () => {
           )}
 
           {/* Interactive virtual museum walkthrough guidelines */}
-          <div style={styles.guideBox}>
+          <div className="guide-box" style={styles.guideBox}>
             <Landmark size={32} color="var(--accent-color)" />
             <div>
               <h3 style={styles.guideTitle}>Visitor Information & Guided Tours</h3>
@@ -362,27 +363,27 @@ const injectMuseumMediaStyles = () => {
           100% { transform: rotate(360deg); }
         }
         @media (max-width: 768px) {
-          div[style*="floorTabs"] {
+          .floor-tabs {
             flex-direction: column !important;
             align-items: stretch !important;
           }
-          button[style*="floorTabBtn"] {
+          .floor-tab-btn {
             text-align: center !important;
           }
-          div[style*="guideBox"] {
+          .guide-box {
             flex-direction: column !important;
             align-items: center !important;
             text-align: center !important;
           }
         }
         @media (max-width: 600px) {
-          section[style*="banner"] {
+          .banner-section {
             padding: 2.5rem 0 !important;
           }
-          h1[style*="bannerTitle"] {
+          .banner-title {
             font-size: 1.8rem !important;
           }
-          div[style*="categoryFilters"] {
+          .category-filters {
             gap: 0.5rem !important;
           }
         }

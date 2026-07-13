@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav style={styles.nav}>
       <div className="container" style={styles.container}>
         <Link to="/" style={styles.brandContainer} onClick={() => setIsOpen(false)}>
-          <div className="navbar-logo logo-hover" style={{ overflow: 'hidden', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+          <div className="navbar-logo logo-hover brand-logo-first" style={{ overflow: 'hidden', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
             <img src="/guru_logo.png" alt="Guru Gopinath" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div className="navbar-logo logo-hover" style={{ overflow: 'hidden', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
@@ -40,7 +40,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div style={styles.desktopMenu}>
+        <div className="desktop-menu" style={styles.desktopMenu}>
           {navItems.map((item) => (
             <NavLink
               key={item.name}
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button style={styles.mobileBtn} onClick={() => setIsOpen(!isOpen)}>
+        <button className="mobile-btn" style={styles.mobileBtn} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} color="var(--text-white)" /> : <Menu size={24} color="var(--text-white)" />}
         </button>
       </div>
@@ -185,10 +185,10 @@ const injectMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
-          div[style*="desktopMenu"] {
+          .desktop-menu {
             display: none !important;
           }
-          button[style*="mobileBtn"] {
+          .mobile-btn {
             display: block !important;
           }
         }
@@ -201,7 +201,7 @@ const injectMediaStyles = () => {
             letter-spacing: 0.5px !important;
           }
           /* Hide the first logo to save space on mobile */
-          a[style*="brandContainer"] div:first-child {
+          .brand-logo-first {
             display: none !important;
           }
           /* Make logo smaller on mobile */

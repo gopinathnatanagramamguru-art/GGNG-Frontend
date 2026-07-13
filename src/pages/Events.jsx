@@ -30,10 +30,10 @@ const Events = () => {
   return (
     <div style={styles.page} className="animate-fade-up">
       {/* Header Banner */}
-      <section style={styles.banner}>
+      <section className="banner-section" style={styles.banner}>
         <div className="container" style={styles.bannerContainer}>
           <span style={styles.govtLabel}>Department of Culture, Govt. of Kerala</span>
-          <h1 style={styles.bannerTitle}>Events & Cultural Calendar</h1>
+          <h1 className="banner-title" style={styles.bannerTitle}>Events & Cultural Calendar</h1>
           <p style={styles.bannerSubtitle}>
             Explore schedules of our annual dance festivals, stage performances, academic seminars, and recitals.
           </p>
@@ -61,14 +61,14 @@ const Events = () => {
               {events.map((event) => (
                 <div key={event._id} style={styles.eventCard}>
                   {event.imageURL && (
-                    <div style={styles.imageWrapper}>
+                    <div className="image-wrapper" style={styles.imageWrapper}>
                       <img src={event.imageURL} alt={event.title} style={styles.eventImg} />
                       {event.isFestival && <span style={styles.festBadge}>National Festival</span>}
                     </div>
                   )}
                   
-                  <div style={styles.cardBody}>
-                    <div style={styles.cardMeta}>
+                  <div className="card-body" style={styles.cardBody}>
+                    <div className="card-meta" style={styles.cardMeta}>
                       <div style={styles.metaItem}>
                         <Calendar size={16} color="var(--primary-color)" />
                         <span>{formatDate(event.date)}</span>
@@ -83,7 +83,7 @@ const Events = () => {
                       <span style={styles.inlineFestBadge}>National Festival</span>
                     )}
 
-                    <h3 style={styles.eventTitle}>{event.title}</h3>
+                    <h3 className="event-title" style={styles.eventTitle}>{event.title}</h3>
                     <p style={styles.eventDesc}>{event.description}</p>
                   </div>
                 </div>
@@ -265,23 +265,23 @@ const injectEventsMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 600px) {
-          section[style*="banner"] {
+          .banner-section {
             padding: 2.5rem 0 !important;
           }
-          h1[style*="bannerTitle"] {
+          .banner-title {
             font-size: 1.8rem !important;
           }
-          div[style*="imageWrapper"] {
+          .image-wrapper {
             height: 200px !important;
           }
-          div[style*="cardBody"] {
+          .card-body {
             padding: 1.25rem !important;
           }
-          div[style*="cardMeta"] {
+          .card-meta {
             flex-direction: column !important;
             gap: 0.5rem !important;
           }
-          h3[style*="eventTitle"] {
+          .event-title {
             font-size: 1.3rem !important;
           }
         }

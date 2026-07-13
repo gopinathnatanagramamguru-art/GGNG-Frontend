@@ -90,7 +90,7 @@ const Home = () => {
       </div>
 
       {/* Hero Section */}
-      <section style={styles.hero}>
+      <section className="hero-section" style={styles.hero}>
         <video
           autoPlay
           loop
@@ -104,8 +104,8 @@ const Home = () => {
         <div style={styles.heroOverlay} />
         <div className="container" style={styles.heroContent}>
           <span style={styles.heroGovLabel}>Department of Culture, Government of Kerala</span>
-          <h1 style={styles.heroTitle}>Welcome to Guru Gopinath Natanagramam & Dance Museum</h1>
-          <p style={styles.heroSubtitle}>
+          <h1 className="hero-title" style={styles.heroTitle}>Welcome to Guru Gopinath Natanagramam & Dance Museum</h1>
+          <p className="hero-subtitle" style={styles.heroSubtitle}>
             Immerse yourself in India's first specialized three-storey Dance Museum and a world-class institution dedicated to training classical arts.
           </p>
           <div style={styles.heroActions}>
@@ -302,11 +302,11 @@ const Home = () => {
       </section>
 
       {/* Bio Banner Section (Intro to Guru Gopinath) */}
-      <section style={styles.bioBanner}>
-        <div className="container" style={styles.bioContainer}>
+      <section className="bio-banner-section" style={styles.bioBanner}>
+        <div className="container bio-container" style={styles.bioContainer}>
           <div style={styles.bioTextCol}>
             <span style={styles.bioLabel}>Legendary Founder</span>
-            <h2 style={styles.bioTitle}>Guru Gopinath</h2>
+            <h2 className="bio-title" style={styles.bioTitle}>Guru Gopinath</h2>
             <p style={styles.bioText}>
               "Guru Gopinath (1908–1987) was a pathbreaking classical dancer who created Kerala Natanam, a style which maintains the structural integrity of Kathakali but presents it in a more expressive and communicative format for the contemporary audience."
             </p>
@@ -317,7 +317,7 @@ const Home = () => {
               Read Biography
             </Link>
           </div>
-          <div style={styles.bioImgCol}>
+          <div className="bio-img-col" style={styles.bioImgCol}>
             <img
               src="/guru.jpg"
               alt="Guru Gopinath Representation"
@@ -338,9 +338,9 @@ const Home = () => {
           <div className="grid-2">
             {events.length > 0 ? (
               events.map((event, index) => (
-                <div key={event._id} style={styles.eventRowCard} className={`card-hover animate-fade-up delay-${(index % 2) + 1}`}>
-                  <div style={styles.eventDateBadge}>
-                    <span style={styles.eventDateDay}>
+                <div key={event._id} style={styles.eventRowCard} className={`event-row-card card-hover animate-fade-up delay-${(index % 2) + 1}`}>
+                  <div className="event-date-badge" style={styles.eventDateBadge}>
+                    <span className="event-date-day" style={styles.eventDateDay}>
                       {new Date(event.date).getDate()}
                     </span>
                     <span style={styles.eventDateMonth}>
@@ -668,47 +668,47 @@ const injectHomeMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
-          section[style*="bioContainer"] {
+          .bio-container {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
           }
-          section[style*="bioImgCol"] {
+          .bio-img-col {
             order: -1 !important;
           }
-          h1[style*="heroTitle"] {
+          .hero-title {
             font-size: 2.5rem !important;
           }
         }
         @media (max-width: 600px) {
-          section[style*="hero"] {
+          .hero-section {
             padding: 4rem 0 !important;
           }
-          h1[style*="heroTitle"] {
+          .hero-title {
             font-size: 1.8rem !important;
             line-height: 1.3 !important;
           }
-          p[style*="heroSubtitle"] {
+          .hero-subtitle {
             font-size: 1rem !important;
             margin-bottom: 1.5rem !important;
           }
-          section[style*="bioBanner"] {
+          .bio-banner-section {
             padding: 3rem 0 !important;
           }
-          h2[style*="bioTitle"] {
+          .bio-title {
             font-size: 1.8rem !important;
           }
-          div[style*="eventRowCard"] {
+          .event-row-card {
             flex-direction: column !important;
             gap: 1rem !important;
           }
-          div[style*="eventDateBadge"] {
+          .event-date-badge {
             flex-direction: row !important;
             width: auto !important;
             height: auto !important;
             padding: 0.5rem 1rem !important;
             gap: 0.5rem !important;
           }
-          span[style*="eventDateDay"] {
+          .event-date-day {
             font-size: 1.2rem !important;
           }
           .leader-card {

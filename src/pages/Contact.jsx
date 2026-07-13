@@ -58,10 +58,10 @@ const Contact = () => {
   return (
     <div style={styles.page} className="animate-fade-up">
       {/* Header Banner */}
-      <section style={styles.banner}>
+      <section className="banner-section" style={styles.banner}>
         <div className="container" style={styles.bannerContainer}>
           <span style={styles.govtLabel}>Get in Touch</span>
-          <h1 style={styles.bannerTitle}>Contact Us & Visit</h1>
+          <h1 className="banner-title" style={styles.bannerTitle}>Contact Us & Visit</h1>
           <p style={styles.bannerSubtitle}>
             Reach out to our registrar office for course details, museum guided tour permissions, or general feedback.
           </p>
@@ -70,7 +70,7 @@ const Contact = () => {
 
       {/* Main Grid Content */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-main)' }}>
-        <div className="container" style={styles.gridContainer}>
+        <div className="container grid-container" style={styles.gridContainer}>
 
           {/* Left Column: Details & Map */}
           <div style={styles.detailsCol}>
@@ -425,16 +425,16 @@ const injectContactMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
-          div[style*="gridContainer"] {
+          .grid-container {
             grid-template-columns: 1fr !important;
             gap: 3rem !important;
           }
         }
         @media (max-width: 600px) {
-          section[style*="banner"] {
+          .banner-section {
             padding: 2.5rem 0 !important;
           }
-          h1[style*="bannerTitle"] {
+          .banner-title {
             font-size: 1.8rem !important;
           }
         }

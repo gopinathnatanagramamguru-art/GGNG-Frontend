@@ -143,11 +143,10 @@ const Courses = () => {
 
   return (
     <div style={styles.page} className="animate-fade-up">
-      {/* Header Banner */}
-      <section style={styles.banner}>
+      <section className="banner-section" style={styles.banner}>
         <div className="container" style={styles.bannerContainer}>
           <span style={styles.govtLabel}>Department of Culture, Govt. of Kerala</span>
-          <h1 style={styles.bannerTitle}>Courses & Training Programs</h1>
+          <h1 className="banner-title" style={styles.bannerTitle}>Courses & Training Programs</h1>
           <p style={styles.bannerSubtitle}>
             Enroll in structured certificate and diploma batches recognized by government authorities, coached by eminent artists.
           </p>
@@ -199,9 +198,8 @@ const Courses = () => {
         </div>
       </section>
 
-      {/* Main Grid Content */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-main)' }}>
-        <div className="container" style={styles.mainGrid}>
+        <div className="container main-grid" style={styles.mainGrid}>
           
           {/* Left Column: Course Cards */}
           <div style={styles.coursesColumn}>
@@ -252,7 +250,7 @@ const Courses = () => {
                           </div>
                           <h3 style={styles.courseTitle}>{course.title}</h3>
                         </div>
-                      <div style={styles.courseMeta}>
+                      <div className="course-meta" style={styles.courseMeta}>
                         <div style={styles.metaItem}>
                           <Award size={16} color="var(--primary-color)" />
                           <span><strong>Fee:</strong> {course.fee}</span>
@@ -279,7 +277,7 @@ const Courses = () => {
           </div>
 
           {/* Right Column: Admission Inquiry Form */}
-          <div id="inquiry-form-section" style={styles.formColumn}>
+          <div id="inquiry-form-section" className="form-column" style={styles.formColumn}>
             <div style={styles.formCard}>
               <h3 style={styles.formTitle}>Admission Inquiry Form</h3>
               <p style={styles.formSubtitle}>Submit this form to express interest, and our registrar office will contact you with batch details.</p>
@@ -702,11 +700,11 @@ const styles = {
         styleSheet.id = styleId;
         styleSheet.innerText = `
           @media (max-width: 900px) {
-            div[style*="mainGrid"] {
+            .main-grid {
               grid-template-columns: 1fr !important;
               gap: 3rem !important;
             }
-            div[style*="formColumn"] {
+            .form-column {
               position: static !important;
             }
             .highlights-container {
@@ -715,13 +713,13 @@ const styles = {
             }
           }
           @media (max-width: 600px) {
-            section[style*="banner"] {
+            .banner-section {
               padding: 2.5rem 0 !important;
             }
-            h1[style*="bannerTitle"] {
+            .banner-title {
               font-size: 1.8rem !important;
             }
-            div[style*="courseMeta"] {
+            .course-meta {
               grid-template-columns: 1fr !important;
               gap: 0.75rem !important;
             }

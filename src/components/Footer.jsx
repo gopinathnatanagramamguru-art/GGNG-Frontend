@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, ExternalLink, ShieldCheck } from 'lucide-react';
 const Footer = () => {
   return (
     <footer style={styles.footer}>
-      <div className="container" style={styles.container}>
+      <div className="container footer-container" style={styles.container}>
         {/* Info Column */}
         <div style={styles.col}>
           <h3 style={styles.colTitle}>Guru Gopinath Natanagramam</h3>
@@ -73,7 +73,7 @@ const Footer = () => {
       </div>
 
       <div style={styles.bottom}>
-        <div className="container" style={styles.bottomContainer}>
+        <div className="container footer-bottom-container" style={styles.bottomContainer}>
           <p>© {new Date().getFullYear()} Guru Gopinath Natanagramam. All Rights Reserved. Managed by Department of Culture, Govt. of Kerala.</p>
 
         </div>
@@ -184,17 +184,17 @@ const injectFooterMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
-          footer div[style*="container"] {
+          .footer-container {
             grid-template-columns: 1fr 1fr !important;
             gap: 2rem !important;
           }
         }
         @media (max-width: 550px) {
-          footer div[style*="container"] {
+          .footer-container {
             grid-template-columns: 1fr !important;
             gap: 1.5rem !important;
           }
-          footer div[style*="bottomContainer"] {
+          .footer-bottom-container {
             flex-direction: column !important;
             text-align: center !important;
           }
