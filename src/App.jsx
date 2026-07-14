@@ -9,10 +9,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Museum from './pages/Museum';
 import Courses from './pages/Courses';
+import Awards from './pages/Awards';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
+import AdminRoute from './components/AdminRoute';
 
 function App() {
   return (
@@ -28,9 +30,11 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/museum" element={<Museum />} />
             <Route path="/courses" element={<Courses />} />
+            <Route path="/awards" element={<Awards />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
 
 
 

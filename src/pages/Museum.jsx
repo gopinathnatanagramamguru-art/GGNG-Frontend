@@ -76,9 +76,9 @@ const Museum = () => {
             <div className="floor-tabs" style={styles.floorTabs}>
               {[
                 { label: 'All Galleries', val: 'all' },
-                { label: 'Floor 1: Costumes & Murals', val: '1' },
-                { label: 'Floor 2: Guru Gopinath Archives', val: '2' },
-                { label: 'Floor 3: Percussion & Instruments', val: '3' },
+                { label: 'Ground Floor', val: '1' },
+                { label: 'First Floor', val: '2' },
+                { label: 'Second Floor', val: '3' },
               ].map((tab) => (
                 <button
                   key={tab.val}
@@ -139,7 +139,9 @@ const Museum = () => {
                       alt={item.title}
                       style={styles.cardImg}
                     />
-                    <span style={styles.cardFloor}>Floor {item.floor}</span>
+                    <span style={styles.cardFloor}>
+                      {item.floor === 1 ? 'Ground Floor' : item.floor === 2 ? 'First Floor' : item.floor === 3 ? 'Second Floor' : `Floor ${item.floor}`}
+                    </span>
                   </div>
                   <div style={styles.cardInfo}>
                     <span style={styles.cardCat}>{item.category}</span>
@@ -157,7 +159,7 @@ const Museum = () => {
             <div>
               <h3 style={styles.guideTitle}>Visitor Information & Guided Tours</h3>
               <p style={styles.guideText}>
-                The museum is located within the Vattiyoorkavu campus and is open to the public from **Tuesday to Sunday, 10:00 AM to 5:00 PM**. Cultural guides are available at the Floor 1 reception counter to guide student delegations and tourists through the collections. For group booking requests, please submit an inquiry form on our contact page.
+                The museum is located within the Vattiyoorkavu campus and is open to the public from **Tuesday to Sunday, 10:00 AM to 5:00 PM**. Cultural guides are available at the Ground Floor reception counter to guide student delegations and tourists through the collections. For group booking requests, please submit an inquiry form on our contact page.
               </p>
             </div>
           </div>

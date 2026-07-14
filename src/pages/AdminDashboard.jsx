@@ -329,9 +329,9 @@ const AdminDashboard = () => {
                           className="form-control"
                           required
                         >
-                          <option value={1}>Floor 1: Costumes & Murals</option>
-                          <option value={2}>Floor 2: Guru Gopinath Archives</option>
-                          <option value={3}>Floor 3: Percussion & Instruments</option>
+                          <option value={1}>Ground Floor</option>
+                          <option value={2}>First Floor</option>
+                          <option value={3}>Second Floor</option>
                         </select>
                       </div>
                       <div className="form-group">
@@ -602,7 +602,7 @@ const AdminDashboard = () => {
                                 style={styles.tableThumb} 
                               />
                             </td>
-                            <td>Floor {item.floor}</td>
+                            <td>{item.floor === 1 ? 'Ground Floor' : item.floor === 2 ? 'First Floor' : item.floor === 3 ? 'Second Floor' : `Floor ${item.floor}`}</td>
                             <td>{item.category}</td>
                             <td><strong>{item.title}</strong></td>
                             <td>

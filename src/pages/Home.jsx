@@ -277,7 +277,9 @@ const Home = () => {
                       alt={exhibit.title}
                       style={styles.cardImg}
                     />
-                    <span style={styles.floorBadge}>Floor {exhibit.floor}</span>
+                    <span style={styles.floorBadge}>
+                      {exhibit.floor === 1 ? 'Ground Floor' : exhibit.floor === 2 ? 'First Floor' : exhibit.floor === 3 ? 'Second Floor' : `Floor ${exhibit.floor}`}
+                    </span>
                   </div>
                   <div style={styles.cardContent}>
                     <span style={styles.cardCategory}>{exhibit.category}</span>
