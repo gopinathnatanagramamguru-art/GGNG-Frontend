@@ -56,12 +56,6 @@ const Awards = () => {
                 <p style={styles.blockText}>
                   Instituted by the Guru Gopinath Natana Gramam for the Department of Cultural Affairs, it honors lifetime achievements in Indian classical dance. The award recognizes artists who have made monumental contributions to the preservation and growth of traditional performance arts.
                 </p>
-                <div style={styles.highlightBox}>
-                  <CheckCircle size={18} color="var(--accent-dark)" style={{ flexShrink: 0, marginTop: '2px' }} />
-                  <div>
-                    <strong>Pioneering Vision:</strong> Honoring legendary exponents, gurus, and scholars of classical dance across India.
-                  </div>
-                </div>
               </div>
 
               {/* Award Details */}
