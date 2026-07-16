@@ -41,7 +41,7 @@ const Awards = () => {
                 <Trophy size={28} color="var(--accent-color)" />
               </div>
               <div>
-                <h2 style={styles.awardMainTitle}>Guru Gopinath National Natya Puraskar Award</h2>
+                <h2 style={styles.awardMainTitle}>Guru Gopinath National Natya Puraskaram</h2>
                 <span style={styles.badgeGold}>National Level Honour</span>
               </div>
             </div>
@@ -51,15 +51,15 @@ const Awards = () => {
               <div style={styles.aboutBlock}>
                 <h3 style={styles.blockTitle}>About The Award</h3>
                 <p style={styles.blockText}>
-                  The **Guru Gopinath National Natya Puraskar Award** is India’s premier national recognition instituted to honour legendary exponents, gurus, and scholars of classical dance.
+                  The <strong>Guru Gopinath National Natya Puraskaram</strong> (also known as the <strong>Guru Gopinath Desiya Natya Puraskaram</strong>) is the highest dance award conferred by the Government of Kerala.
                 </p>
                 <p style={styles.blockText}>
-                  Named after the pioneer of Kerala Natanam, this prestigious annual award acknowledges individuals who have made monumental contributions to the training, performance grammar, and democratization of classical choreography across the country. It is curated and presented directly by the Government of Kerala.
+                  Instituted by the Guru Gopinath Natana Gramam for the Department of Cultural Affairs, it honors lifetime achievements in Indian classical dance. The award recognizes artists who have made monumental contributions to the preservation and growth of traditional performance arts.
                 </p>
                 <div style={styles.highlightBox}>
                   <CheckCircle size={18} color="var(--accent-dark)" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <div>
-                    <strong>Pioneering Vision:</strong> Honoring those who carry forward Guruji's dream of bringing classical art to the masses.
+                    <strong>Pioneering Vision:</strong> Honoring legendary exponents, gurus, and scholars of classical dance across India.
                   </div>
                 </div>
               </div>
@@ -70,15 +70,15 @@ const Awards = () => {
                 <ul style={styles.list}>
                   <li style={styles.listItem}>
                     <span style={styles.bullet}>•</span>
-                    <span><strong>Cash Prize:</strong> A cash prize of <strong>Rs. 3,00,000/-</strong> (Three Lakhs Indian Rupees) to support the artist's continued legacy.</span>
+                    <span><strong>Cash Prize:</strong> A cash purse of <strong>₹3,00,000/-</strong> (Three Lakh Rupees) to support the artist's continued legacy.</span>
                   </li>
                   <li style={styles.listItem}>
                     <span style={styles.bullet}>•</span>
-                    <span><strong>Honour Insignia:</strong> A specially crafted Gold Medal, an ornamental plaque of excellence, and a formal Citation of Honour.</span>
+                    <span><strong>Honour Insignia:</strong> A formal Citation of Merit and a statuette designed by noted sculptor <strong>Kanayi Kunhiraman</strong>.</span>
                   </li>
                   <li style={styles.listItem}>
                     <span style={styles.bullet}>•</span>
-                    <span><strong>Presentation:</strong> Awarded annually during the Guru Gopinath National Dance Festival by the Hon’ble Minister for Culture, Govt. of Kerala.</span>
+                    <span><strong>Presentation:</strong> Conferred by the Government of Kerala and presented by the Hon’ble Minister for Culture during cultural celebrations.</span>
                   </li>
                 </ul>
               </div>
