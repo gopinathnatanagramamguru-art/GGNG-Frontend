@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, Trophy, Scroll, BookOpen, FileCheck, CheckCircle, HelpCircle, Camera, X } from 'lucide-react';
+import { Award, Trophy, FileCheck, CheckCircle, Camera, X } from 'lucide-react';
 
 const Awards = () => {
   const [expandedBox, setExpandedBox] = useState(null);
@@ -83,104 +83,11 @@ const Awards = () => {
                 </ul>
               </div>
 
-              {/* How to Apply */}
-              <div style={styles.aboutBlock}>
-                <h3 style={styles.blockTitle}>HOW TO APPLY</h3>
-                <ul style={styles.list}>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Nomination Route:</strong> Nominations must be proposed by recognized cultural institutions, universities, state academies, or previous Puraskar laureates. Direct self-applications are not accepted.</span>
-                  </li>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Portfolio Submission:</strong> Submit a comprehensive bio-data detailing 25+ years of contribution, along with video publications and supporting reviews.</span>
-                  </li>
-                  <li style={styles.bulletItem}>
-                    <HelpCircle size={14} color="var(--text-light)" style={{ marginRight: '6px' }} />
-                    <span>Forms can be submitted physically or mailed to the Natanagramam Registrar office by the announced deadline.</span>
-                  </li>
-                </ul>
-              </div>
+
             </div>
           </div>
 
-          {/* 2. Guru Gopinath Saparya Puraskaram */}
-          <div style={styles.awardSectionWrapper} className="card-hover">
-            <div style={styles.sectionHeader}>
-              <div style={styles.iconCircle}>
-                <Scroll size={28} color="var(--accent-color)" />
-              </div>
-              <div>
-                <h2 style={styles.awardMainTitle}>Guru Gopinath Saparya Puraskaram</h2>
-                <span style={styles.badgeGold}>Kerala State Award</span>
-              </div>
-            </div>
 
-            <div style={styles.verticalStack}>
-              <div style={styles.aboutBlock}>
-                <p style={styles.blockText}>
-                  The **Saparya Puraskaram** is designed to honor veteran classical dance teachers, local gurus, and choreographers who have dedicated their lives to promoting traditional art forms, establishing regional dance schools, and training new generations in Kerala Natanam.
-                </p>
-              </div>
-
-              <div style={styles.detailsBlock}>
-                <h3 style={styles.blockTitle}>Award Details & Eligibility</h3>
-                <ul style={styles.list}>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Cash Reward:</strong> <strong>Rs. 1,00,000/-</strong> (One Lakh Rupees) along with a citation of merit and ceremonial shawl presentation.</span>
-                  </li>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Eligibility:</strong> Open to traditional dance teachers who have actively taught and popularised classical arts in Kerala for over 20 years.</span>
-                  </li>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Selection:</strong> Selected annually based on direct peer evaluations and review by a state-appointed committee of art scholars.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* 3. Guru Gopinath State Fellowship */}
-          <div style={styles.awardSectionWrapper} className="card-hover">
-            <div style={styles.sectionHeader}>
-              <div style={styles.iconCircle}>
-                <BookOpen size={28} color="var(--accent-color)" />
-              </div>
-              <div>
-                <h2 style={styles.awardMainTitle}>Guru Gopinath State Fellowship</h2>
-                <span style={styles.badgeGold}>Research & Training Support</span>
-              </div>
-            </div>
-
-            <div style={styles.verticalStack}>
-              <div style={styles.aboutBlock}>
-                <p style={styles.blockText}>
-                  This academic research fellowship is designed to support young scholars, performance researchers, and postgraduates who intend to record, analyze, and publish literature on Guru Gopinath’s life, teaching methods, and choreography.
-                </p>
-              </div>
-
-              <div style={styles.detailsBlock}>
-                <h3 style={styles.blockTitle}>Fellowship Details & Requirements</h3>
-                <ul style={styles.list}>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Fellowship Grant:</strong> A monthly stipend of <strong>Rs. 15,000/-</strong> awarded for a period of one full year to facilitate extensive field research.</span>
-                  </li>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Academic Scope:</strong> Must cover research on the grammar and staging techniques of Kerala Natanam.</span>
-                  </li>
-                  <li style={styles.listItem}>
-                    <span style={styles.bullet}>•</span>
-                    <span><strong>Requirement:</strong> Submission of a formal thesis and conducting a lecture demonstration at Natanagramam upon completion of the fellowship tenure.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
           {/* Gallery Section */}
           <div style={{ marginTop: '3rem' }}>
