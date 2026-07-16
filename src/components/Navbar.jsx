@@ -21,6 +21,7 @@ const Navbar = () => {
     { name: 'Courses', path: '/courses' },
     { name: 'Awards & Recognition', path: '/awards' },
     { name: 'Events & News', path: '/events' },
+    { name: 'RTI', path: '/rti' },
     { name: 'Contact', path: '/contact' },
   ];
 

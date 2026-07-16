@@ -23,16 +23,16 @@ const LEADERS = [
     image: "/anjana_m.png"
   },
   {
-    name: "Smt Sabna Sreedevi Sasidharan",
-    role: "Secretary",
-    department: "Guru Gopinath Natanagramam,Cultural Affairs, Government of Kerala",
-    image: "/sabna_s.png"
-  },
-  {
     name: "Shri Prem Krishnan IAS",
     role: "Director",
     department: "Directorate of Culture, Government of Kerala",
     image: "/prem_krishnan.png"
+  },
+  {
+    name: "Smt Sabna Sreedevi Sasidharan",
+    role: "Secretary",
+    department: "Guru Gopinath Natanagramam,Cultural Affairs, Government of Kerala",
+    image: "/sabna_s.png"
   }
 ];
 
@@ -115,6 +115,55 @@ const Home = () => {
             <Link to="/museum" className="btn btn-outline" style={styles.heroBtnOutline}>
               Visit Museum <Landmark size={18} style={{ marginLeft: '8px' }} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* About Natanagramam Section */}
+      <section className="section-padding animate-scale-in" style={{ backgroundColor: 'var(--bg-alt)' }}>
+        <div className="container" style={styles.aboutContainerStacked}>
+
+          {/* Title & Subtitle */}
+          <div style={styles.aboutHeaderStacked}>
+            <span style={styles.aboutLabel}>About the Institution</span>
+            <h2 className="about-title" style={styles.aboutTitleStacked}>Guru Gopinath Natanagramam & Guru Gopinath National Dance Museum </h2>
+            <div style={styles.aboutDividerStacked} />
+          </div>
+
+          {/* Photo */}
+          <div style={styles.aboutImgColStacked}>
+            <img
+              src="/Screenshot 2026-07-15 161007.png"
+              alt="Guru Gopinath Natanagramam & Guru Gopinath National Dance Museum"
+              style={styles.aboutImgStacked}
+            />
+          </div>
+
+          {/* Content paragraphs */}
+          <div style={styles.aboutTextColStacked}>
+            <p style={styles.aboutText}>
+              <b>Guru Gopinath Natanagramam</b> is an autonomous institution under the Department of Cultural Affairs, Government of Kerala, dedicated to preserving, promoting, and propagating the rich legacy of Natanakalanidhi Dr. Guru Gopinath, the pioneer of Keralanatanam. Located at Vattiyoorkkav, Thiruvananthapuram, the institution serves as a national centre for performing arts, cultural research, education, documentation, and heritage conservation.
+            </p>
+            <p style={styles.aboutText}>
+              The institution offers systematic training in Indian classical dance forms, with special emphasis on Keralanatanam, Indian classical dance forms, and Music, while also conducting workshops, seminars, lecture demonstrations, festivals, and performances by eminent artists from across the country. Guru Gopinath Natanagramam regularly organizes prestigious cultural events such as Guru Gopinath Jayanti, Natyolsavam, national dance festivals, folk festivals, and award ceremonies such as National Natya Puraskaram and Saparya Puraskaram, that recognize outstanding contributions to the field of performing arts.
+            </p>
+            <p style={styles.aboutText}>
+              The institution is also home to the <b>Guru Gopinath National Dance Museum</b>, which preserves invaluable archival materials, photographs, a wax museum, costumes, manuscripts, and memorabilia related to Indian dance traditions and the life of Dr. Guru Gopinath. Through documentation, publications, research projects, and digital preservation initiatives, the museum contributes significantly to safeguarding India’s performing arts heritage.
+            </p>
+            <p style={styles.aboutText}>
+              Committed to cultural excellence and social inclusion, Guru Gopinath Natanagramam undertakes programmes that support artists through scholarships, training opportunities, and capacity-building initiatives. It also promotes women artists, transgenders, and young talents by providing platforms for performance, learning, and professional development.
+            </p>
+            <p style={styles.aboutText}>
+              With a vision to make Kerala a vibrant hub of classical performing arts, Guru Gopinath Natanagramam continues to uphold the artistic philosophy and timeless legacy of Dr. Guru Gopinath while inspiring future generations to preserve and celebrate India’s rich cultural traditions.
+            </p>
+            <div style={styles.aboutButtonsStacked}>
+              <Link to="/about" className="btn btn-primary">
+                Learn More About Us <ArrowRight size={16} style={{ marginLeft: '8px' }} />
+              </Link>
+              <Link to="/courses" className="btn btn-outline">
+                Explore Courses
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -333,7 +382,7 @@ const Home = () => {
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-alt)' }}>
         <div className="container">
           <div className="text-center">
-            <h2 className="section-title">Upcoming Events & News</h2>
+            <h2 className="section-title">Upcoming Updates</h2>
             <p className="section-subtitle">Stay updated with the latest cultural events and programs at Natanagramam.</p>
           </div>
 
@@ -659,6 +708,113 @@ const styles = {
     lineHeight: '1.5',
     marginTop: '0.25rem',
   },
+  aboutContainer: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '4rem',
+    alignItems: 'center',
+  },
+  aboutImgCol: {
+    display: 'flex',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+  aboutImg: {
+    width: '100%',
+    maxWidth: '480px',
+    height: '400px',
+    objectFit: 'cover',
+    borderRadius: 'var(--radius-md)',
+    border: '3px solid var(--accent-color)',
+    boxShadow: 'var(--shadow-lg)',
+  },
+  aboutTextCol: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+  },
+  aboutLabel: {
+    color: 'var(--primary-color)',
+    fontSize: '0.85rem',
+    fontWeight: '600',
+    letterSpacing: '2px',
+    textTransform: 'uppercase',
+  },
+  aboutTitle: {
+    color: 'var(--primary-dark)',
+    fontSize: '2.5rem',
+    lineHeight: '1.2',
+  },
+  aboutDivider: {
+    width: '60px',
+    height: '3px',
+    backgroundColor: 'var(--accent-color)',
+    borderRadius: '2px',
+    marginBottom: '0.5rem',
+  },
+  aboutText: {
+    color: 'var(--text-light)',
+    lineHeight: '1.7',
+    fontSize: '1.05rem',
+  },
+  aboutContainerStacked: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '2rem',
+    maxWidth: '900px',
+    margin: '0 auto',
+  },
+  aboutHeaderStacked: {
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+  },
+  aboutTitleStacked: {
+    color: 'var(--primary-dark)',
+    fontSize: '2.5rem',
+    lineHeight: '1.2',
+    marginTop: '0.5rem',
+    textAlign: 'center',
+  },
+  aboutDividerStacked: {
+    width: '80px',
+    height: '3px',
+    backgroundColor: 'var(--accent-color)',
+    borderRadius: '2px',
+    marginTop: '0.75rem',
+  },
+  aboutImgColStacked: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  aboutImgStacked: {
+    width: '100%',
+    maxWidth: '750px',
+    height: 'auto',
+    maxHeight: '450px',
+    objectFit: 'cover',
+    borderRadius: 'var(--radius-md)',
+    border: '3px solid var(--accent-color)',
+    boxShadow: 'var(--shadow-lg)',
+  },
+  aboutTextColStacked: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.25rem',
+    textAlign: 'left',
+  },
+  aboutButtonsStacked: {
+    marginTop: '1.5rem',
+    display: 'flex',
+    gap: '1rem',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+  },
 };
 
 // Simple media query style injection for responsive layout adjustments
@@ -670,6 +826,13 @@ const injectHomeMediaStyles = () => {
       styleSheet.id = styleId;
       styleSheet.innerText = `
         @media (max-width: 900px) {
+          .about-container {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+          .about-img-col {
+            order: -1 !important;
+          }
           .bio-container {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;

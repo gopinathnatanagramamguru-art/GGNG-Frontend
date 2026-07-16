@@ -26,6 +26,7 @@ const Footer = () => {
             <li style={styles.listItem}><Link to="/museum" style={styles.link}>Museum Exhibits</Link></li>
             <li style={styles.listItem}><Link to="/courses" style={styles.link}>Courses & Admission</Link></li>
             <li style={styles.listItem}><Link to="/events" style={styles.link}>Events & News</Link></li>
+            <li style={styles.listItem}><Link to="/rti" style={styles.link}>Right to Information (RTI)</Link></li>
             <li style={styles.listItem}><Link to="/contact" style={styles.link}>Contact Us</Link></li>
           </ul>
         </div>

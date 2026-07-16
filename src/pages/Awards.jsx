@@ -33,7 +33,7 @@ const Awards = () => {
       {/* Main Awards Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--bg-main)' }}>
         <div className="container" style={styles.contentContainer}>
-          
+
           {/* 1. Guru Gopinath National Natya Puraskar Award */}
           <div style={styles.awardSectionWrapper} className="card-hover">
             <div style={styles.sectionHeader}>
@@ -51,7 +51,7 @@ const Awards = () => {
               <div style={styles.aboutBlock}>
                 <h3 style={styles.blockTitle}>About The Award</h3>
                 <p style={styles.blockText}>
-                  The **Guru Gopinath National Natya Puraskar Award** is India’s premier national recognition instituted to honour legendary exponents, gurus, and scholars of classical dance. 
+                  The **Guru Gopinath National Natya Puraskar Award** is India’s premier national recognition instituted to honour legendary exponents, gurus, and scholars of classical dance.
                 </p>
                 <p style={styles.blockText}>
                   Named after the pioneer of Kerala Natanam, this prestigious annual award acknowledges individuals who have made monumental contributions to the training, performance grammar, and democratization of classical choreography across the country. It is curated and presented directly by the Government of Kerala.
@@ -185,7 +185,7 @@ const Awards = () => {
           {/* Gallery Section */}
           <div style={{ marginTop: '3rem' }}>
             <div className="text-center" style={{ marginBottom: '3rem' }}>
-              <h2 className="section-title">Awards Gallery</h2>
+              <h2 className="section-title">Gallery</h2>
               <p className="section-subtitle">
                 A visual journey through the history of our award ceremonies, fellowship presentation moments, and archival memories.
               </p>

@@ -12,6 +12,7 @@ import Courses from './pages/Courses';
 import Awards from './pages/Awards';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import RTI from './pages/RTI';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminRoute from './components/AdminRoute';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/awards" element={<Awards />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/rti" element={<RTI />} />
             <Route path="/login" element={<Login />} />
             <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
 
