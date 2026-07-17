@@ -99,7 +99,7 @@ const Home = () => {
           playsInline
           style={styles.heroVideo}
         >
-          <source src="/natanagramam header video .mp4" type="video/mp4" />
+          <source src="/ggng finalcut .mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div style={styles.heroOverlay} />
