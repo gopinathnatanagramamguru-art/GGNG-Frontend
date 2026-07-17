@@ -182,15 +182,15 @@ const Courses = () => {
               <div style={styles.feeCol}>
                 <h5 style={styles.feeColTitle}>Students (Children)</h5>
                 <ul style={styles.feeList}>
-                  <li><strong>1 Subject:</strong> Rs. 500/mo <span style={styles.feeBreakdown}>(+ Rs. 200 Adm. Fee = <strong>Rs. 700/-</strong> Total)</span></li>
-                  <li><strong>2 Subjects:</strong> Rs. 600/mo <span style={styles.feeBreakdown}>(+ Rs. 200 Adm. Fee = <strong>Rs. 800/-</strong> Total)</span></li>
+                  <li><strong>1 Subject:</strong> Rs. 500/month <span style={styles.feeBreakdown}>(+ Rs. 200 Admission Fee = <strong>Rs. 700/-</strong> Total)</span></li>
+                  <li><strong>2 Subjects:</strong> Rs. 600/month <span style={styles.feeBreakdown}>(+ Rs. 200 Admission Fee = <strong>Rs. 800/-</strong> Total)</span></li>
                 </ul>
               </div>
               <div style={styles.feeCol}>
                 <h5 style={styles.feeColTitle}>Adults</h5>
                 <ul style={styles.feeList}>
-                  <li><strong>1 Subject:</strong> Rs. 600/mo <span style={styles.feeBreakdown}>(+ Rs. 200 Adm. Fee = <strong>Rs. 800/-</strong> Total)</span></li>
-                  <li><strong>2 Subjects:</strong> Rs. 800/mo <span style={styles.feeBreakdown}>(+ Rs. 200 Adm. Fee = <strong>Rs. 1,000/-</strong> Total)</span></li>
+                  <li><strong>1 Subject:</strong> Rs. 600/month <span style={styles.feeBreakdown}>(+ Rs. 200 Admission Fee = <strong>Rs. 800/-</strong> Total)</span></li>
+                  <li><strong>2 Subjects:</strong> Rs. 800/month <span style={styles.feeBreakdown}>(+ Rs. 200 Admission Fee = <strong>Rs. 1,000/-</strong> Total)</span></li>
                 </ul>
               </div>
             </div>
