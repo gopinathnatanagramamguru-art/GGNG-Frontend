@@ -78,7 +78,6 @@ const Museum = () => {
                 { label: 'All Galleries', val: 'all' },
                 { label: 'Ground Floor', val: '1' },
                 { label: 'First Floor', val: '2' },
-                { label: 'Second Floor', val: '3' },
               ].map((tab) => (
                 <button
                   key={tab.val}
@@ -135,7 +134,14 @@ const Museum = () => {
                 <div key={item._id} style={styles.exhibitCard} className="animate-fade-up">
                   <div style={styles.cardImgWrapper}>
                     <img
-                      src={item.imageURL || 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=600&auto=format&fit=crop'}
+                      src={
+                        item.title?.toLowerCase() === '5d teatre' || 
+                        item.title?.toLowerCase() === '5d theatre' ||
+                        item.title?.toLowerCase() === '270 degree theatre' ||
+                        item.title?.toLowerCase() === '270 degree teatre'
+                          ? '/theater_5d.png'
+                          : (item.imageURL || 'https://images.unsplash.com/photo-1545128485-c400e7702796?q=80&w=600&auto=format&fit=crop')
+                      }
                       alt={item.title}
                       style={styles.cardImg}
                     />

@@ -45,7 +45,7 @@ const Footer = () => {
             </li>
             <li style={styles.contactItem}>
               <Mail size={18} color="var(--accent-color)" />
-              <span style={styles.text}>info@natanagramam.org</span>
+              <span style={styles.text}>gopinathnatanagramamguru@gmail.com</span>
             </li>
           </ul>
         </div>

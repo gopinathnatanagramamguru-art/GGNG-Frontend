@@ -23,10 +23,11 @@ const LEADERS = [
     image: "/anjana_m.png"
   },
   {
-    name: "Shri Prem Krishnan IAS",
+    name: "K Inbasekar IAS",
     role: "Director",
     department: "Directorate of Culture, Government of Kerala",
-    image: "/prem_krishnan.png"
+    image: "/k_inbasekar.png",
+    objectPosition: "center 12%"
   },
   {
     name: "Smt Sabna Sreedevi Sasidharan",
@@ -186,7 +187,12 @@ const Home = () => {
               >
                 <div className="leader-image-container">
                   {leader.image ? (
-                    <img src={leader.image} alt={leader.name} className="leader-image" />
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="leader-image"
+                      style={leader.objectPosition ? { objectPosition: leader.objectPosition } : {}}
+                    />
                   ) : (
                     <User size={64} className="leader-avatar-icon" />
                   )}
@@ -237,7 +243,7 @@ const Home = () => {
                 </div>
                 <h3 style={styles.featureTitle}>The Dance Museum</h3>
                 <p style={styles.featureText}>
-                  Explore India's unique three-floor dance museum featuring mural paintings, life-size mannequins, dance ornaments, and historical archives.
+                  Explore India's unique two-floor dance museum featuring mural paintings, life-size mannequins, dance ornaments, and historical archives.
                 </p>
                 <Link to="/museum" style={styles.featureLink}>
                   Learn More <ArrowRight size={16} />
@@ -390,18 +396,20 @@ const Home = () => {
             {events.length > 0 ? (
               events.map((event, index) => (
                 <div key={event._id} style={styles.eventRowCard} className={`event-row-card card-hover animate-fade-up delay-${(index % 2) + 1}`}>
-                  <div className="event-date-badge" style={styles.eventDateBadge}>
-                    <span className="event-date-day" style={styles.eventDateDay}>
-                      {new Date(event.date).getDate()}
-                    </span>
-                    <span style={styles.eventDateMonth}>
-                      {new Date(event.date).toLocaleString('default', { month: 'short' })}
-                    </span>
-                  </div>
+                  {event.date && (
+                    <div className="event-date-badge" style={styles.eventDateBadge}>
+                      <span className="event-date-day" style={styles.eventDateDay}>
+                        {new Date(event.date).getDate()}
+                      </span>
+                      <span style={styles.eventDateMonth}>
+                        {new Date(event.date).toLocaleString('default', { month: 'short' })}
+                      </span>
+                    </div>
+                  )}
                   <div style={styles.eventDetails}>
                     {event.isFestival && <span style={styles.festivalBadge}>National Festival</span>}
                     <h3 style={styles.eventRowTitle}>{event.title}</h3>
-                    <p style={styles.eventRowLocation}>📍 {event.location}</p>
+                    {event.location && <p style={styles.eventRowLocation}>📍 {event.location}</p>}
                     <p style={styles.eventRowText}>{event.description}</p>
                   </div>
                 </div>

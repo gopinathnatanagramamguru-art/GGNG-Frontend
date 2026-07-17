@@ -331,7 +331,6 @@ const AdminDashboard = () => {
                         >
                           <option value={1}>Ground Floor</option>
                           <option value={2}>First Floor</option>
-                          <option value={3}>Second Floor</option>
                         </select>
                       </div>
                       <div className="form-group">

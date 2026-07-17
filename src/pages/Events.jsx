@@ -69,14 +69,18 @@ const Events = () => {
                   
                   <div className="card-body" style={styles.cardBody}>
                     <div className="card-meta" style={styles.cardMeta}>
-                      <div style={styles.metaItem}>
-                        <Calendar size={16} color="var(--primary-color)" />
-                        <span>{formatDate(event.date)}</span>
-                      </div>
-                      <div style={styles.metaItem}>
-                        <MapPin size={16} color="var(--primary-color)" />
-                        <span>{event.location}</span>
-                      </div>
+                      {event.date && (
+                        <div style={styles.metaItem}>
+                          <Calendar size={16} color="var(--primary-color)" />
+                          <span>{formatDate(event.date)}</span>
+                        </div>
+                      )}
+                      {event.location && (
+                        <div style={styles.metaItem}>
+                          <MapPin size={16} color="var(--primary-color)" />
+                          <span>{event.location}</span>
+                        </div>
+                      )}
                     </div>
 
                     {!event.imageURL && event.isFestival && (
