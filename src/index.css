@@ -575,3 +575,88 @@ textarea.form-control {
   line-height: 1.4;
 }
 
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE STYLES (Screen sizes <= 900px & <= 600px)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .responsive-grid,
+  .rti-grid,
+  .grid-container,
+  .grid-section,
+  .grid-section-inverse,
+  .main-grid,
+  .highlights-container,
+  .fee-grid,
+  .points-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .banner-section, .rti-banner {
+    padding: 3rem 1rem !important;
+  }
+
+  .banner-title {
+    font-size: 2.1rem !important;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95% !important;
+    padding: 0 0.75rem !important;
+  }
+
+  .section-padding {
+    padding: 3rem 0 !important;
+  }
+
+  .banner-title {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .banner-subtitle {
+    font-size: 0.95rem !important;
+  }
+
+  .section-title, .hero-title {
+    font-size: 1.7rem !important;
+  }
+
+  .subtitle-text {
+    font-size: 1.6rem !important;
+  }
+
+  .rti-intro-card, .info-card, .form-card, .glass-card {
+    padding: 1.25rem !important;
+  }
+
+  .rti-officer-card {
+    padding: 1.25rem !important;
+  }
+
+  .officer-badge-mobile {
+    position: static !important;
+    display: inline-block !important;
+    margin-bottom: 0.5rem !important;
+    align-self: flex-start !important;
+  }
+
+  .leader-card {
+    max-width: 100% !important;
+  }
+
+  /* Table Horizontal Scrolling on Mobile */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

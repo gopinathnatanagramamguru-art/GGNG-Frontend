@@ -48,7 +48,7 @@ const RTI = () => {
   return (
     <div style={styles.page} className="animate-fade-up">
       {/* Header Banner */}
-      <section className="banner-section" style={styles.banner}>
+      <section className="banner-section rti-banner" style={styles.banner}>
         <div className="container" style={styles.bannerContainer}>
           <span style={styles.govtLabel}>Department of Culture, Government of Kerala</span>
           <h1 className="banner-title" style={styles.bannerTitle}>Right to Information (RTI)</h1>
@@ -63,7 +63,7 @@ const RTI = () => {
         <div className="container" style={styles.mainContainer}>
 
           {/* Introduction Card */}
-          <div style={styles.introCard}>
+          <div style={styles.introCard} className="rti-intro-card">
             <div style={styles.introHeader}>
               <ShieldCheck size={28} color="var(--primary-color)" />
               <h2 style={styles.sectionHeading}>Right to Information Act, 2005</h2>
@@ -73,15 +73,15 @@ const RTI = () => {
             </p>
           </div>
 
-          <div style={styles.gridContainer}>
+          <div style={styles.gridContainer} className="rti-grid responsive-grid">
             {/* Left Side: Designated RTI Officers */}
             <div style={styles.officersSection}>
               <h3 style={styles.subHeading}>Designated RTI Officers</h3>
               <p style={styles.subText}>Contact details of officials authorized to handle applications and appeals:</p>
 
               {/* Officer 1: FAA */}
-              <div style={styles.officerCard} className="card-hover">
-                <div style={styles.officerBadge}>Appellate Authority</div>
+              <div style={styles.officerCard} className="card-hover rti-officer-card">
+                <div style={styles.officerBadge} className="officer-badge-mobile">Appellate Authority</div>
                 <div style={styles.officerNameContainer}>
                   <User size={20} color="var(--primary-color)" />
                   <h4 style={styles.officerName}>Smt. Sabna Sreedevi</h4>
@@ -95,8 +95,8 @@ const RTI = () => {
               </div>
 
               {/* Officer 2: SPIO */}
-              <div style={styles.officerCard} className="card-hover">
-                <div style={styles.officerBadge}>
+              <div style={styles.officerCard} className="card-hover rti-officer-card">
+                <div style={styles.officerBadge} className="officer-badge-mobile">
                   State Public Information Officer</div>
                 <div style={styles.officerNameContainer}>
                   <User size={20} color="var(--primary-color)" />
