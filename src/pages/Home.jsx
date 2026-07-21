@@ -86,7 +86,7 @@ const Home = () => {
         <div className="ticker-content">
           <span className="ticker-item">🏛️ Welcome to Guru Gopinath Natanagramam - India's premier dance learning and research center.</span>
           <span className="ticker-item">📣 Admissions are now open for Kerala Natanam and Classical Music courses (2026 batches).</span>
-          <span className="ticker-item">🌟 Upcoming: Guru Gopinath National Dance Festival starting Dec 15, 2026. Entry Free!</span>
+          <span className="ticker-item">🌟 Special Lecture Demonstration & Seminars on Kerala Natanam scheduled every month. Entry Free!</span>
         </div>
       </div>
 

@@ -90,7 +90,7 @@ const Contact = () => {
                   <Phone size={22} color="var(--primary-color)" />
                   <div>
                     <strong style={styles.infoLabel}>Phone / Landline</strong>
-                    <span style={styles.infoText}>+91 471 236 6555</span>
+                    <span style={styles.infoText}>04712364771</span>
                   </div>
                 </li>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                   <Mail size={22} color="var(--primary-color)" />
                   <div>
                     <strong style={styles.infoLabel}>Email</strong>
-                    <span style={styles.infoText}>info@natanagramam.org, registrar@natanagramam.org</span>
+                    <span style={styles.infoText}>info@gurugopinathnatanagramam.in</span>
                   </div>
                 </li>
 
@@ -116,7 +116,7 @@ const Contact = () => {
             <div style={styles.mapContainer}>
               <div style={styles.mapBanner}>
                 <Landmark size={24} color="var(--accent-color)" />
-                <span style={styles.mapTitle}>Find Location</span>
+                <span style={styles.mapTitle}>Location</span>
               </div>
               <div style={styles.mapBody}>
                 <p style={styles.mapText}><strong>Guru Gopinath Natanagramam Campus</strong></p>
