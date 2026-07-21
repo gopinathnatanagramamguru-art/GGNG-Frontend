@@ -106,7 +106,7 @@ const RTI = () => {
                 <div style={styles.officerDetails}>
                   <p style={styles.detailItem}><MapPin size={16} color="var(--accent-dark)" /> Guru Gopinath Natanagramam, Vattiyoorkavu, TVM</p>
                   <p style={styles.detailItem}><Phone size={16} color="var(--accent-dark)" /> 04712364771</p>
-                  <p style={styles.detailItem}><Mail size={16} color="var(--accent-dark)" /> info@natanagramam.org</p>
+                  <p style={styles.detailItem}><Mail size={16} color="var(--accent-dark)" /> info@gurugopinathnatanagramam.in  </p>
                 </div>
               </div>
             </div>
