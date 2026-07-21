@@ -41,11 +41,11 @@ const Footer = () => {
             </li>
             <li style={styles.contactItem}>
               <Phone size={18} color="var(--accent-color)" />
-              <span style={styles.text}>+91 471 236 6555</span>
+              <span style={styles.text}>04712364771</span>
             </li>
             <li style={styles.contactItem}>
               <Mail size={18} color="var(--accent-color)" />
-              <span style={styles.text}>gopinathnatanagramamguru@gmail.com</span>
+              <span style={styles.text}>info@gurugopinathnatanagramam.in</span>
             </li>
           </ul>
         </div>
