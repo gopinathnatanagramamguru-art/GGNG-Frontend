@@ -105,7 +105,7 @@ const Home = () => {
         <div style={styles.heroOverlay} />
         <div className="container" style={styles.heroContent}>
           <span style={styles.heroGovLabel}>Department of Culture, Government of Kerala</span>
-          <h1 className="hero-title" style={styles.heroTitle}>Welcome to Guru Gopinath Natanagramam & Dance Museum</h1>
+          <h1 className="hero-title" style={styles.heroTitle}>Welcome to Guru Gopinath Natanagramam & National Dance Museum</h1>
           <p className="hero-subtitle" style={styles.heroSubtitle}>
             Immerse yourself in India's first specialized three-storey Dance Museum and a world-class institution dedicated to training classical arts.
           </p>
