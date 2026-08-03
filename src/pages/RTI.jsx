@@ -81,14 +81,14 @@ const RTI = () => {
 
               {/* Officer 1: FAA */}
               <div style={styles.officerCard} className="card-hover rti-officer-card">
-                <div style={styles.officerBadge} className="officer-badge-mobile">Appellate Authority</div>
+                <div style={styles.officerBadge} className="officer-badge-mobile">State Public Information Officer (Appellate officer)</div>
                 <div style={styles.officerNameContainer}>
                   <User size={20} color="var(--primary-color)" />
                   <h4 style={styles.officerName}>Smt. Sabna Sreedevi</h4>
                 </div>
                 <p style={styles.officerRole}>Secretary</p>
                 <div style={styles.officerDetails}>
-                  <p style={styles.detailItem}><MapPin size={16} color="var(--accent-dark)" /> Guru Gopinath Natanagramam, Vattiyoorkavu, TVM</p>
+                  <p style={styles.detailItem}><MapPin size={16} color="var(--accent-dark)" /> Guru Gopinath Natanagramam, Vattiyoorkavu, Thiruvananthapuram</p>
                   <p style={styles.detailItem}><Phone size={16} color="var(--accent-dark)" />04712364771</p>
                   <p style={styles.detailItem}><Mail size={16} color="var(--accent-dark)" /> secretaryggng@gmail.com</p>
                 </div>
@@ -97,14 +97,14 @@ const RTI = () => {
               {/* Officer 2: SPIO */}
               <div style={styles.officerCard} className="card-hover rti-officer-card">
                 <div style={styles.officerBadge} className="officer-badge-mobile">
-                  State Public Information Officer</div>
+                  Assistant Public Information Officer</div>
                 <div style={styles.officerNameContainer}>
                   <User size={20} color="var(--primary-color)" />
                   <h4 style={styles.officerName}>Bindu V</h4>
                 </div>
-                <p style={styles.officerRole}>Asminstrative Officer Guru Gopinath Natanagramam</p>
+                <p style={styles.officerRole}>Senior Clerk, Gurugopinath Natanagramam</p>
                 <div style={styles.officerDetails}>
-                  <p style={styles.detailItem}><MapPin size={16} color="var(--accent-dark)" /> Guru Gopinath Natanagramam, Vattiyoorkavu, TVM</p>
+                  <p style={styles.detailItem}><MapPin size={16} color="var(--accent-dark)" /> Guru Gopinath Natanagramam, Vattiyoorkavu, Thiruvananthapuram</p>
                   <p style={styles.detailItem}><Phone size={16} color="var(--accent-dark)" /> 04712364771</p>
                   <p style={styles.detailItem}><Mail size={16} color="var(--accent-dark)" /> info@gurugopinathnatanagramam.in  </p>
                 </div>
