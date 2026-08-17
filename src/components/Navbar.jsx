@@ -18,6 +18,8 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Dance Museum', path: '/museum' },
+    { name: 'Our Programs', path: '/programs' },
+    { name: 'Projects', path: '/projects' },
     { name: 'Courses', path: '/courses' },
     { name: 'Awards & Recognition', path: '/awards' },
     { name: 'Events & News', path: '/events' },

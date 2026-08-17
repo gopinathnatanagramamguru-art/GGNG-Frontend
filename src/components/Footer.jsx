@@ -24,6 +24,8 @@ const Footer = () => {
           <ul style={styles.list}>
             <li style={styles.listItem}><Link to="/about" style={styles.link}>About Guru Gopinath</Link></li>
             <li style={styles.listItem}><Link to="/museum" style={styles.link}>Museum Exhibits</Link></li>
+            <li style={styles.listItem}><Link to="/programs" style={styles.link}>Our Programs</Link></li>
+            <li style={styles.listItem}><Link to="/projects" style={styles.link}>Projects</Link></li>
             <li style={styles.listItem}><Link to="/courses" style={styles.link}>Courses & Admission</Link></li>
             <li style={styles.listItem}><Link to="/events" style={styles.link}>Events & News</Link></li>
             <li style={styles.listItem}><Link to="/rti" style={styles.link}>Right to Information (RTI)</Link></li>

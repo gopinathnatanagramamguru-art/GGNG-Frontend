@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Museum from './pages/Museum';
+import Programs from './pages/Programs';
 import Courses from './pages/Courses';
 import Awards from './pages/Awards';
 import Events from './pages/Events';
@@ -16,6 +17,7 @@ import RTI from './pages/RTI';
 import Login from './pages/Login';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminRoute from './components/AdminRoute';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/museum" element={<Museum />} />
+            <Route path="/programs" element={<Programs />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/events" element={<Events />} />
